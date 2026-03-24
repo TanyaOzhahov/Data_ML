@@ -6,7 +6,7 @@ df = df.head(10)
 
 agent = AnnotationAgent(
     modality="text",
-    api_key="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"
+    api_key=api_key
 )
 
 # 1. Авторазметка
