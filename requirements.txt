@@ -1,0 +1,4 @@
+kaggle
+huggingface_hub
+openai
+python-dotenv
