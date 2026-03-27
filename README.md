@@ -21,4 +21,22 @@ Pipeline
 Accuracy
 F1-score
 
+## 📊 ML Pipeline Architecture
 
+```mermaid
+flowchart TD
+
+A[User Query] --> B[Dataset Agent]
+B --> C[Raw Dataset]
+
+C --> D[DataQualityAgent]
+D --> E[Clean Data]
+
+E --> F[AnnotationAgent]
+F --> G[Labeled Data + Confidence]
+
+G --> H[Human Review]
+H --> I[Corrected Data]
+
+I --> J[ActiveLearningAgent]
+J --> K[Trained Model]
