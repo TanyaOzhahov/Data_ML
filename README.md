@@ -56,8 +56,6 @@ ml-data-pipeline/
 │       ├── auto_labeled.csv    # После авторазметки
 │       ├── reviewed.csv        # После HITL-2
 │       ├── al_selected.csv     # Отобрано AL агентом
-│       ├── final_dataset.csv   # ✅ Финальный датасет
-│       ├── DATA_CARD.md        # Карточка датасета
 │       └── labelstudio_import.json
 │
 ├── models/
@@ -72,9 +70,7 @@ ml-data-pipeline/
 │   └── final_report.md           # Финальный отчёт (5 разделов)
 │
 ├── review_queue.csv              # ← HITL-2: примеры для ручной проверки
-├── review_queue_corrected.csv    # ← HITL-2: исправленные метки (создаётся человеком)
 ├── al_review_queue.csv           # ← HITL-3: AL-отобранные для ручной разметки
-├── al_review_queue_corrected.csv # ← HITL-3: исправленные (создаётся человеком)
 │
 ├── run_pipeline.py             # 🚀 ТОЧКА ВХОДА — запускает весь пайплайн
 ├── requirements.txt
