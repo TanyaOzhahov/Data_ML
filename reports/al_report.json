@@ -1,0 +1,53 @@
+{
+  "config": {
+    "n_start": 15,
+    "n_iterations": 5,
+    "batch_size": 10,
+    "strategies": [
+      "entropy",
+      "random"
+    ],
+    "test_size": 50
+  },
+  "histories": {
+    "entropy": [
+      {
+        "iteration": 0,
+        "n_labeled": 15,
+        "accuracy": 0.42,
+        "f1": 0.19718309859154928,
+        "strategy": "entropy"
+      },
+      {
+        "iteration": 1,
+        "n_labeled": 25,
+        "accuracy": 0.42,
+        "f1": 0.19718309859154928,
+        "strategy": "entropy"
+      }
+    ],
+    "random": [
+      {
+        "iteration": 0,
+        "n_labeled": 15,
+        "accuracy": 0.42,
+        "f1": 0.19718309859154928,
+        "strategy": "random"
+      },
+      {
+        "iteration": 1,
+        "n_labeled": 25,
+        "accuracy": 0.5,
+        "f1": 0.317948717948718,
+        "strategy": "random"
+      }
+    ]
+  },
+  "savings": {
+    "target_accuracy": 0.49,
+    "n_labeled_entropy": null,
+    "n_labeled_random": 25,
+    "samples_saved": null,
+    "savings_pct": null
+  }
+}
